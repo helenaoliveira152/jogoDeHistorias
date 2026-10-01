@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './Jogo.css'
 
 function Jogo() {
-    const[emoji, setEmoji] = useState('🏁  ')
+    const[emoji, setEmoji] = useState('🏁')
     let emojis = [
   "😀", "😃", "😄", "😁", "😆", "😅", "😂", "🤣", "😊", "😇",
   "🙂", "🙃", "😉", "😌", "😍", "🥰", "😘", "😗", "😙", "😚",
@@ -41,7 +41,7 @@ function Jogo() {
 
 
 function sortear(){
-    let i = Math.floor(Math.random()*200)
+    let i = Math.floor(Math.random()*300)
     setEmoji (emojis[i])
 }
 
